@@ -17,6 +17,6 @@ const example = new EmbedBuilder()
 
 // If the response code is 400, then you probably have incorrectly filled in embed, consider the validity of the links!
 
-webhook.send({content: "123", embeds: example, files: ["./1.jpg"]});
+webhook.send({content: "123", embeds: example, files: ["./file-path.png"]});
 
 console.log(example)
