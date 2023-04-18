@@ -17,7 +17,7 @@ webhook.setName("chlen").setAvatar("url");
 
 const example = new EmbedBuilder()
     .setTitle("Title")
-    .setAuthor("Author", "url", "url")
+    .setAuthor("Author", "url", "url") // Use null to skip the parameter
     .setDescription("A base description")
     .setColor("#000")
     .addField("Field name", "Field Value", true)
@@ -28,7 +28,7 @@ const example = new EmbedBuilder()
 
 // If the response code is 400, then you probably have incorrectly filled in embed, consider the validity of the links!
 
-webhook.send({content: "123", embeds: example, files: ["./file-path.png"]});
+webhook.send({content: "123", embeds: example, files: ["./1.jpg"]});
 
 console.log(example)
 ```
